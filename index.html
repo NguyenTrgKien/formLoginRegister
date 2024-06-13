@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./formCss.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <form action="" method="POST" class="form-login">
+        <h2 class="form-login__title">
+            Login
+        </h2>
+        <div class="form-login__group">
+            <label for="form-login__label" class="form-login__label">Username</label>
+            <div class="form-login__group-input">
+                <input type="text" id="input-username" class="form-login__input" placeholder="Username">
+                <i class="fa-solid fa-user form-login__icon"></i>
+            </div>
+            <div class="form-login__message"></div>
+        </div>
+        <div class="form-login__group">
+            <label for="form-login__label" class="form-login__label">Password</label>
+            <div class="form-login__group-input">
+                <input type="password" id="input-password" class="form-login__input" placeholder="Password">
+                <i class="fa-solid fa-lock form-login__icon"></i>
+            </div>
+            <div class="form-login__message"></div>
+        </div>
+        <div class="form-login__forgot">
+            <div class="form-login__checkbox">
+                <input type="checkbox" class="form-login__check">
+                <label for="label-remember" class="form-login__label-remember">Remember Me</label>
+            </div>
+            <div class="form-login__forgot-link">
+                Forgot Password
+            </div>
+        </div>
+        <button class="form-login__btn">
+            Login
+        </button>
+        <div class="form-login__contact">
+            <div class="form-login__contact-desc">Or Sign Up Using</div>
+            <div class="form-login__contact-app">
+                <div class="form-login__contact-app-wrap icon-face">
+                    <i class="form-login__contact-app-wrap-icon fa-brands fa-facebook"></i>
+                </div>
+                <div class="form-login__contact-app-wrap icon-twiter">
+                    <i class="form-login__contact-app-wrap-icon fa-brands fa-twitter"></i>
+                </div>
+                <div class="form-login__contact-app-wrap icon-google">
+                    <i class="form-login__contact-app-wrap-icon fa-brands fa-google"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form-login__login">
+            <div class="form-login__login-desc">
+                Or Sign Up Using
+            </div>
+            <div class="form-login__login-btn">
+                SIGN UP
+            </div>
+        </div>
+    </form>
+    <form action="" method="POST" class="form-register">
+        <div class="form-register__title">
+            Register
+        </div>
+        <div class="form-register__group">
+            <label for="form__label" class="form-register__label">Full Name</label>
+            <div class="form-register__group-input">
+                <input type="text" id="input-fullname" name="register-fullname" class="form-register__input" placeholder="Name">
+            </div>
+            <div class="form-register__message">
+
+            </div>
+        </div>
+        <div class="form-register__group">
+            <label for="form__label" class="form-register__label">Email</label>
+            <div class="form-register__group-input">
+                <input type="email" id="input-email" name="register-email" class="form-register__input" placeholder="Email address..">
+            </div>
+            <div class="form-register__message">
+                
+            </div>
+        </div>
+        <div class="form-register__group">
+            <label for="form__label" class="form-register__label">Password</label>
+            <div class="form-register__group-input">
+                <input type="password" id="input-password-register" name="register-password" class="form-register__input" placeholder="Password">
+            </div>
+            <div class="form-register__message">
+
+            </div>
+        </div>
+        <div class="form-register__group">
+            <label for="form__label" class="form-register__label">Repeat Password</label>
+            <div class="form-register__group-input">
+                <input type="password" id="input-passwordRepeat" name="register-passwordRepeat" class="form-register__input" placeholder="Password Repeat">
+            </div>
+            <div class="form-register__message">
+
+            </div>
+        </div>
+        <div class="form-register__group">
+            <label for="form__label" class="form-register__label">Select gender:</label>
+            <div class="form-register__group-wrap">
+                <div class="form-register__group-input-check">
+                    <input name="check-radio" value="male" type="checkbox" class="form-register__radio">
+                    Nam
+                </div>
+                <div class="form-register__group-input-check">
+                    <input name="check-radio" value="female" type="checkbox" class="form-register__radio">
+                    Nữ
+                </div>
+                <div class="form-register__group-input-check">
+                    <input name="check-radio" value="other" type="checkbox" class="form-register__radio">
+                    Khác
+                </div>
+            </div>
+            <div class="form-register__message">
+
+            </div>
+        </div>
+        <button class="form-register__signup-btn">
+            Sign Up
+        </button>
+        <div class="form-register__changeLogin">
+            Already have an a account? <span class="form-register__changeLogin-login">Login</span>
+        </div>
+        <div class="form-register__signup-app">
+            <div class="form-register__signup-app-wrap">
+                <i class="form-register__signup-app-wrap-icon fa-brands fa-facebook"></i>
+                Login with Facebook
+            </div>
+            <div class="form-register__signup-app-wrap icon-google">
+                <i class="form-register__signup-app-wrap-icon fa-brands fa-google"></i>
+                Login with Google
+            </div>
+        </div>
+    </form>
+
+    <script src="./handleForm.js">
+
+    </script>
+    <script>
+        Validation({
+            form: ".form-register",
+            message: ".form-register__message",
+            formGroup: ".form-register__group",
+            rule: [
+                Validation.isRequired("#input-fullname","Vui lòng nhập vào tên đầy đủ!"),
+                Validation.isRequired("#input-email","Vui lòng nhập vào email!"),
+                Validation.isEmail("#input-email","Email nhập vào không đúng!"),
+                Validation.isRequired("#input-password-register","Vui lòng nhập vào mật khẩu của bạn!"),
+                Validation.isPassword("#input-password-register",8,"Mật khẩu phải ít nhất 8 ký tự!"),
+                Validation.isRequired("#input-passwordRepeat","Trường này là bắt buộc!"),
+                Validation.isPasswordRepeat("#input-passwordRepeat",function() {
+                    return document.querySelector("#input-password-register").value;
+                },"Mật khẩu nhập lại không đúng!"),
+                Validation.isRequired(".form-register__radio","Vui lòng chọn giới tính!")
+            ],
+            onSubmit: function(data){
+                console.log(data);
+            }
+        })
+        
+        Validation({
+            form: ".form-login",
+            message: ".form-login__message",
+            formGroup: ".form-login__group",
+            rule: [
+                Validation.isRequired("#input-username","Vui lòng nhập vào tên người dùng!"),
+                Validation.isRequired("#input-username","Tên người dùng không đúng!",function(username) {
+                    return document.querySelector("#input-fullname").value;
+                }),
+                Validation.isRequired("#input-password","Vui lòng nhập mật khẩu của bạn!"),
+                Validation.isPasswordLogin("#input-password","Mật khẩu không đúng!",function(password) {
+                    return document.querySelector("#input-password-register").value;
+                })
+            ],
+            onSubmit: function(data){
+                console.log(data);
+            }
+        })
+    </script> 
+</body>
+</html>
